@@ -1,141 +1,317 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>SCGCPA</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-</head>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-briefcase w3-xxlarge"></i>
-    <p>EXPERIENCE</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#experience" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> SCGCPA</h1>
-    <p>CPA, Analyst, Executive</p>
-    <!--img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about">
-    <h2 class="w3-text-light-grey">SCGCPA</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>CPA with more than a decade of experience as an executive in banking and consulting.  Data analysis and migration.
-        Risk management and compliance.  Financial planning and analysis.  Accounting and financial reporting.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Executive Management</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    </noscript>
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/mdb.min.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.1" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.1" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body class="bg-light" id="top">
+    <header class="d-print-none">
+      <div class="container text-center text-lg-left">
+        <div class="pt-4 clearfix">
+          <h1 class="site-title mb-0">SCGCPA</h1>
+          <div class="site-nav"> 
+            <nav role="navigation">
+              <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Skills</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Experience</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title">Portfolio</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#references" title="References"><span class="menu-title">References</span></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-content">
+      <div class="container">
+<div class="resume-container">
+  <div class="shadow-1-strong bg-white my-5" id="intro">
+    <div class="bg-info text-white">
+      <div class="cover bg-image"><img src="images/header-background.jpg"/>
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
+          <div class="text-center p-5">
+            <div class="avatar p-5"><img class="img-thumbnail shadow-2-strong" src="images/avatar.jpg" width="160" height="160"/></div>
+            <div class="header-bio mt-0">
+              <div data-aos="zoom-in" data-aos-delay="0">
+                <h2 class="h1">SCGCPA</h2>
+                <p>Risk Management Consultant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="w3-wide">Risk Management</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+  </div>
+  <div class="shadow-1-strong bg-white my-5 p-5" id="about">
+    <div class="about-section">
+      <div class="row">
+          <h2 class="h2 fw-light mb-4">About Me</h2>
+          <p>Certified Public Accountant with over 10 years of experience in risk management, financial analysis, and data analytics. 
+            Skilled in developing standardized frameworks to optimize risk control and financial processes. 
+            Proficient in SQL, Python, Power BI, and Tableau to enhance data-driven decision making. 
+            Proven ability to streamline regulatory reporting and build automated tools to strengthen operational resiliency. 
+            Passionate about leveraging data insights to drive continuous improvement.</p>
+
+        </div>
+      </div>
     </div>
-    <p class="w3-wide">Data Visualization and Reporting</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
+  </div>
+  <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
+    <div class="skills-section">
+      <h2 class="h2 fw-light mb-4">Professional Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3"><span class="fw-bolder">Financial Analysis</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Master</div>
+            </div>
+          </div>
+          <div class="mb-3"><span class="fw-bolder">Risk Assessment</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
+            </div>
+          </div>
+          <div class="mb-3"><span class="fw-bolder">Data Visualization</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Advanced</div>
+            </div>
+          </div>
+          <div class="mb-3"><span class="fw-bolder">Regulatory Reporting</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Advanced</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3"><span class="fw-bolder">Data Analytics</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Master</div>
+            </div>
+          </div>
+          <div class="mb-3"><span class="fw-bolder">Automation</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Expert</div>
+            </div>
+          </div>
+          <div class="mb-3"><span class="fw-bolder">Project Management</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
+            </div>
+          </div>
+          <div class="mb-3"><span class="fw-bolder">Forecasting</span>
+            <div class="progress my-2 rounded" style="height: 20px">
+              <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Advanced</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+    <div class="work-experience-section">
+      <h2 class="h2 fw-light mb-4">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">VP Risk Analytics <span class="text-muted h6">at Citi</span></div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            <div class="text-muted text-small mb-3">2017 - Present</div>
+            <div>Developed and executed firm-wide reporting framework to track key risk metrics. Facilitated high-risk workshops to optimize risk controls. Led corrective action reviews to ensure solutions for issues needing restitution. Built tool to centralize risk reporting across the enterprise. Managed data reconciliation for regulatory compliance.</div>
+          </div>
+        </div>
+        <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">Management Consultant <span class="text-muted h6">at Fortune 500</span></div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            <div class="text-muted text-small mb-3">2015 - 2017</div>
+            <div>Provided financial analysis for companies using Tableau, Alteryx and Excel. Built forecasting models to predict product performance. Led ERP implementation, improving accuracy and shortening timeline by 50%. Optimized financial close process for reporting entities.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="shadow-1-strong bg-white my-5 p-5" id="education">
+    <div class="education-section">
+      <h2 class="h2 fw-light mb-4">Education</h2>
+      <div class="timeline">
+        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">BBA in Accounting <span class="text-muted h6">from UTSA</span>          </div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
+          </div>
+        </div>
+        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">Certified Public Accountant <span class="text-muted h6">from Texas State Board of Public Accountancy</span>          </div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            
+          </div>
+        </div>
+        <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
+          <div class="timeline-head px-4 pt-3">
+            <div class="h5">Technical Skills <span class="text-muted h6"></span>          </div>
+          </div>
+          <div class="timeline-body px-4 pb-4">
+            
+            <div>SQL, Python, Power BI, Tableau, SAS, Advanced Excel, VBA, HTML/CSS, ETL.</div>
+          </div>
+        </div>
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-</div>
-      
-    <h3 class="w3-padding-16 w3-text-light-grey">Technical</h3>
-    
-    <p>SQL, SAS, VBA, DAX, Power BI, Tableau, ETL, HTML, CSS, Python, Git, PuTTY, Unix
-    </p>
+    </div>
   </div>
-
-  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="experience">
-    <h3 class="w3-text-light-grey">Experience</h3>
-    <p>
-      <font size="+1"><b>RCSA Reporting</b></font> <br>
-      Designed enterprise wide RCSA reporting dashboard from the ground up.  Developed key metrics with LOB leads upon which to report.  The dashboard uses data originating from the LOB and is imported into a SQL table.  It then feeds into Power BI and Tableau for executive management to review.  When a risk control reaches a trigger boundary, management is alerted to take action.
-      <br>
-      <font size="+1"><b>Issue Management</b></font> <br>
-      Created an Issue Management dashboard to track Corrective Actions and Issue statuses.  Identifying which Issues and CAs require immediate action, are past due or are high risk. <br>
-      <font size="+1"><b>Remediation</b></font> <br>
-      First and second line of defense lead for high risk remediations.  Ensuring customers are made whole via expert data analysis and regulatory interpretation.
-      <br><font size="+1"><b>Managerial</b></font> <br>
-      Mentor talent from a variety of backgrounds to meet their full potential.  Trained individuals with light technical expertise to manage projects independently.
-
-  </p>
+  <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
+    <div class="portfolio-section">
+      <h2 class="h2 fw-light mb-4">Portfolio</h2>
+      <div class="row g-0">
+        <div class="col-md-6"><a href="https://dribbble.com/" target="_blank"><img class="img-fluid" src="images/project-1.png" width="800" height="500"/></a></div>
+        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
+          <div class="m-4 mt-md-2">
+            <p class="text-teal text-small">Financial Modeling & Analysis / Excel / Power BI</p>
+            <h3>Automated Financial Forecasting</h3>
+            <p class="text-muted">Built automated forecasting models in Excel utilizing Power BI to integrate market data. Models enabled predictive insights into product demand and optimized decision-making.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 portfolio-reverse">
+        <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+          <div class="m-4 mt-md-2 text-end">
+            <p class="text-teal text-small">Risk Management / Data Analytics / Tableau</p>
+            <h3>Enterprise Risk Reporting Dashboard</h3>
+            <p class="text-muted">Developed interactive Tableau dashboard to track key risk metrics across the organization. Enhanced visibility into regulatory, operational, and financial risks enterprise-wide.</p>
+          </div>
+        </div>
+        <div class="col-md-6"><a href="https://www.behance.net/" target="_blank"><img class="img-fluid" src="images/project-2.png" width="800" height="500"/></a></div>
+      </div>
+      <div class="row g-0">
+        <div class="col-md-6"><a href="https://dribbble.com/" target="_blank"><img class="img-fluid" src="images/project-3.jpg" width="800" height="500"/></a></div>
+        <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
+          <div class="m-4 mt-md-2">
+            <p class="text-teal text-small">ERP Implementation / Data Migration</p>
+            <h3>Global Finance ERP Go-Live</h3>
+            <p class="text-muted">Led successful on-time ERP go-live for global finance functions. Ensured accurate data migration and reduced implementation timeline by 50%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-    <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="contact">
-    <h3 class="w3-text-light-grey">Contact Me</h3>
-    <p>Reach out via phone or email provided in resume.
-  </p>
+  <div class="shadow-1-strong bg-white my-5 p-5" id="references">
+    <div class="reference-section">
+      <h2 class="h2 fw-light mb-4">References</h2>
+      <div class="row"> 
+        <div class="col-md-6">
+          <div class="d-flex mb-2">
+            <div class="avatar"><img src="images/reference-image-1.jpg" width="60" height="60"/></div>
+            <div class="header-bio m-3 mb-0">
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Charlie</h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Executive / Citi</p>
+            </div>
+          </div>
+          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">SCGCPA is an invaluable member of our risk management team. He developed critical frameworks that improved our risk control processes enterprise-wide. I highly recommend him for any risk analysis or data analytics role.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex mb-2">
+            <div class="avatar"><img src="images/reference-image-2.jpg" width="60" height="60"/></div>
+            <div class="header-bio m-3 mb-0">
+              <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Scott</h3>
+              <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Partner / PWC</p>
+            </div>
+          </div>
+          <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
+            <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">I had the pleasure of working with SCGCPA on several client engagements. He is highly skilled in financial analysis and modeling, and was able to optimize major processes to reduce cycle times significantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  
-    <!-- Footer -->
-    <footer class="w3-content w3-padding-16 w3-text-grey w3-xlarge">
-    <p class="w3-medium">Powered by <a href="https://scgcpa.github.io" target="_blank" class="w3-hover-text-green">SCGCPA</a></p>
-  <!-- End footer -->
-</footer>
+  <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
+    <div class="contant-section">
+      <h2 class="h2 fw-light text mb-4">Contact</h2>
+      <div class="row mb-4">
 
-<!-- END PAGE CONTENT -->
-</div>
+            
+          </div>
+          <div class="mt-5 d-print-none"><form action="https://formspree.io/your@email.com"
+    method="POST">
+  <div class="form-outline mb-4">
+    <input type="text" id="name" class="form-control" required/>
+    <label class="form-label" for="name">Name</label>
+  </div>
+  <div class="form-outline mb-4">
+    <input type="email" id="email" class="form-control" required/>
+    <label class="form-label" for="email">Email address</label>
+  </div>
+  <div class="form-outline mb-4">
+    <textarea class="form-control" style="resize: none;" id="message" rows="4" required></textarea>
+    <label class="form-label" for="message">Message</label>
+  </div>
+  <button class="btn btn-info btn-block mb-4" type="submit">Send</button>
+</form>
 
-</body>
+        
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+      <div class="container">
+        <div class="my-3">
+          <div class="h4">SCGCPA</div>
+          <div class="footer-nav">
+            <nav role="navigation">
+              <ul class="nav justify-content-center">
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="text-small">
+          <div class="mb-1">&copy; SCGCPA. All rights reserved.</div>
+          
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/mdb.min.js?ver=1.2.1"></script>
+    <script src="scripts/aos.js?ver=1.2.1"></script>
+    <script src="scripts/main.js?ver=1.2.1"></script>
+  </body>
 </html>
